@@ -9,11 +9,11 @@
 
 <div class="grid-container">
     <div class="item1">4 Op Een Rij</div>
-    <div class="item2" id="player1name"><h5>Player 1<br>
+    <div class="item2" id="player1name"><h5>Player 1 Points:<br>
         <input type="text" id="name1" name="name1" placeholder="optioneel.."><br><br>
         <input type="submit" value="Submit" onclick="nameSet()"></h5>
         <br>
-        <h5 id="points1">0</h5>
+        <h6 id="points1">0</h6>
         </div>
     <div class="item3"><section class="flex-container" id="vakjesVeld">
         <section id="vakje0"></section>
@@ -59,11 +59,11 @@
         <section id="vakje40"></section>
         <section id="vakje41"></section>
     </section></div>
-    <div class="item4" id="player2name"><h5>Player 2<br>
+    <div class="item4" id="player2name"><h5>Player 2 Points:<br>
         <input type="text" id="name2" name="name2" placeholder="optioneel.."><br><br>
         <input type="submit" value="Submit" onclick="nameSet2()"></h5>
         <br>
-        <h5 id="points2">0</h5>
+        <h6 id="points2">0</h6>
         </div>
     <div class="item5" id="playerchange">Player1</div>
 </div>
@@ -76,7 +76,7 @@
     let name = document.getElementById("name1").value;
     let points = Number(document.getElementById("points1").innerText);
     if(name !== ""){
-        document.getElementById("player1name").innerHTML = `<h5>Points : <br>${name}<br><h6 id="points1">${points}</h6></h5>`;
+        document.getElementById("player1name").innerHTML = `<h5>Points: <br>${name}<br><h6 id="points1">${points}</h6></h5>`;
     }
     else{
         alert("Je moet een naam invullen!");
@@ -88,13 +88,12 @@
     let name = document.getElementById("name2").value;
     let points = Number(document.getElementById("points2").innerText);
     if(name !== ""){
-        document.getElementById("player2name").innerHTML = `<h5>Points : <br>${name}<br><h6 id="points2">${points}</h6></h5>`;
+        document.getElementById("player2name").innerHTML = `<h5>Points: <br>${name}<br><h6 id="points2">${points}</h6></h5>`;
     }
     else{
         alert("Je moet een naam invullen!");
     }
 }
 </script>
-
 </body>
 </html>
