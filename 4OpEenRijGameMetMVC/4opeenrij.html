@@ -65,9 +65,10 @@
         <br>
         <h6 id="points2">0</h6>
         </div>
+    <button onclick="Restart()">Restart</button>
     <div class="item5" id="playerchange">Player1</div>
+    <button onclick="ResetPoints()">Reset Points</button>
 </div>
-<script src="js/Component.js"></script>
 <script src="js/View.js"></script>
 <script src="js/Model.js"></script>
 <script src="js/Controller.js"></script>
@@ -94,6 +95,18 @@
         alert("Je moet een naam invullen!");
     }
 }
+</script>
+
+<script>function ResetPoints(){
+    document.getElementById("points1").innerText = "0";
+    document.getElementById("points2").innerText = "0";
+}
+</script>
+
+<script>function Restart(){
+    window.location = `/4OpEenRijGameMetMVC/4opeenrij.html`;
+}
+
 </script>
 </body>
 </html>
