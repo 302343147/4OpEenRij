@@ -1,6 +1,5 @@
 window.addEventListener('load', () => {
     let controller = new Controller();
-    //controller.init();
 });
 
 class Controller {
